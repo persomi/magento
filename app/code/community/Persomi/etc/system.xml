@@ -37,7 +37,6 @@
                             <label>App ID</label>
                             <frontend_type>text</frontend_type>
                             <config_path>persomi/app_id</config_path>
-                            <validate>validate-alphanum</validate>
                             <sort_order>2</sort_order>
                             <show_in_default>1</show_in_default>
                             <show_in_website>1</show_in_website>
