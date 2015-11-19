@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Persomi>
+            <version>0.1.0</version>
+        </Persomi>
+    </modules>
+    <!-- note, DON'T put this inside the <global> tag! -->
+    <frontend>
+        <layout>
+            <updates>
+                <persomi>
+                    <file>persomi.xml</file>
+                </persomi>
+            </updates>
+        </layout>
+    </frontend>
+    <default>
+        <persomi>
+            <enabled>1</enabled>
+	        <app_id></app_id>
+        </persomi>
+    </default>
+</config>
