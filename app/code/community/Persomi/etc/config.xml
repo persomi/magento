@@ -5,6 +5,15 @@
             <version>0.1.0</version>
         </Persomi>
     </modules>
+
+    <global>
+        <blocks>
+            <persomi_main>
+                <class>Persomi_Block</class>
+            </persomi_main>
+        </blocks>
+    </global>
+
     <!-- note, DON'T put this inside the <global> tag! -->
     <frontend>
         <layout>
@@ -19,6 +28,7 @@
         <persomi>
             <enabled>1</enabled>
 	        <app_id></app_id>
+            <output_user_id>0</output_user_id>
         </persomi>
     </default>
 </config>

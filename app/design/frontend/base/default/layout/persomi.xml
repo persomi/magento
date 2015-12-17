@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="1.0.0">
+    <default>
+        <reference name="head">
+            <block type="persomi_main/tag" name="persomi_tag" as="persomi_tag"
+                   template="persomi/tag.phtml" />
+        </reference>
+    </default>
+</layout>
