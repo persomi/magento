@@ -3,24 +3,13 @@
     /* @var $this Persomi_Block_Tag */
     $persomi_app_id = Mage::getStoreConfig('persomi/app_id');
     $persomi_tag_enabled = Mage::getStoreConfig('persomi/enabled');
-    $persomi_output_user_id = Mage::getStoreConfig('persomi/output_user_id');
+    // $persomi_output_user_id = Mage::getStoreConfig('persomi/output_user_id');
     ?>
     <?php if ($persomi_tag_enabled && $persomi_app_id) : ?>
 <script>
-var _snaq = _snaq || [];
-<?php
-if($persomi_output_user_id) {
-  $session = Mage::getSingleton('customer/session');
-  if($session->isLoggedIn()) {
-    $customerData = $session->getCustomer();
-    $persomiCode = "_snaq.push(['setUserId', '%s']);\n";
-    echo sprintf($persomiCode, $customerData->getId());
-  }
-}
-?>
-(function(d,t,u,e,p){e=d.createElement(t);e.async=1;e.src=u;
-p=d.getElementsByTagName(t)[0];p.parentNode.insertBefore(e,p);
-})(document,'script','//js.persomi.com/<?php echo $persomi_app_id; ?>');
+(function(w,d,t,u,v,s,p){w['PersomiGlobalObject']=v;w[v]=w[v]||function(){(w[v].q=w[v].q||[]).push(arguments)};
+s=d.createElement(t),p=d.getElementsByTagName(t)[0];s.async=1;s.src=u;p.parentNode.insertBefore(s,p);
+})(window,document,'script','//js.persomi.com/<?php echo $persomi_app_id; ?>','psm');
 </script>
     <?php endif; ?>
 <?php } catch (Exception $e) {

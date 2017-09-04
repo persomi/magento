@@ -28,7 +28,6 @@
         <persomi>
             <enabled>1</enabled>
 	        <app_id></app_id>
-            <output_user_id>0</output_user_id>
         </persomi>
     </default>
 </config>

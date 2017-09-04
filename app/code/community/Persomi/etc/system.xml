@@ -45,19 +45,6 @@
                                 <Persomi_Tag_Enabled>1</Persomi_Tag_Enabled>
                             </depends>
                         </Persomi_App_Id>
-                        <Persomi_Output_User_Id translate="label">
-                            <label>Output User ID</label>
-                            <frontend_type>select</frontend_type>
-                            <source_model>adminhtml/system_config_source_yesno</source_model>
-                            <config_path>persomi/output_user_id</config_path>
-                            <sort_order>1</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-                            <depends>
-                                <Persomi_Tag_Enabled>1</Persomi_Tag_Enabled>
-                            </depends>
-                        </Persomi_Output_User_Id>
                     </fields>
                     <expanded>1</expanded>
                 </Persomi_Tag_Settings>
